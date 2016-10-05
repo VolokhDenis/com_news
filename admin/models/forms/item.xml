@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf8" ?>
+        <form>
+            <fieldset name="details" label="COM_NEWS_ITEM_DETAILS">
+                <field name="id" ></field>
+
+
+
+            </fieldset>
+        </form>
