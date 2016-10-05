@@ -2,7 +2,7 @@
 
 defined('_JEXEC') or die();
 
-class NewsViewItem extends JVeiwLegacy { 
+class NewsViewItem extends JViewLegacy {
 
 	protected $form;
 	protected $item;

@@ -2,7 +2,7 @@
 
 defined('_JEXEC') or die();
 
-class NewsViewNews extends JVeiwLegacy { //Создаем класс вида как часть глобального класса JViewLegacy
+class NewsViewNews extends JViewLegacy { //Создаем класс вида как часть глобального класса JViewLegacy
 
 	public function display($tpl=null){ //Передаем виду макет tpl по умолчанию default
 
