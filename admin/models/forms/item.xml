@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="utf8" ?>
         <form>
             <fieldset name="details" label="COM_NEWS_ITEM_DETAILS">
-                <field name="id" ></field>
+                <field name="id" type="hidden"/>
+                <field
+                        name="title"
+                        type="text"
+                        label="COM_NEWS_ITEM_TITLE_LABEL"
+                        description="COM_NEWS_ITEM_TITLE_DESC"
+                        size="40"
+                        class="inputbox"
+                        required="true"
+                        default=""
+                />
+                <field
+                        name="alias"
+                        type="text"
+                        default=""
+                        label="COM_NEWS_ITEM_ALIAS_LABEL"
+                        description="COM_NEWS_ITEM_ALIAS_DESC"
+                />
+                <field
+                        name="text"
+                        type="editor"
+                        default=""
+                        label="COM_NEWS_ITEM_TEXT_LABEL"
+                        description="COM_NEWS_ITEM_TEXT_DESC"
+                />
+                <field
+                        name="published"
+                        type="list"
+                        label="JSTATUS"
+                        description="JFIELD_PUBLISHED_DESC"
+                        class="chzn-color-state"
+                        filter="intval"
+                        size="1"
+                        default="1"
+                >
+                    <option value="1">JPUBLISHED</option>
+                    <option value="0">JUNPUBLISHED</option>
+                </field>
 
+                <field
+                        name="publish_up"
+                        type="calendar"
+                        label="COM_NEWS_PUBLISH_UP_LABEL"
+                        description="COM_NEWS_PUBLISH_UP_DESC"
+                        format="%Y-%m-%d"
+                        size="22"
+                />
 
+                <fields>
+                    <!--Пересмотреть урок 5 если хочешь знать как добавить более одного изображения в новость-->
+                    <field name="image1" type="media" label="COM_NEWS_ITEM_IMG_LABEL" description="COM_NEWS_ITEM_IMG_DESC"></field>
+
+                </fields>
 
             </fieldset>
         </form>

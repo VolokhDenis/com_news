@@ -4,7 +4,7 @@ defined('_JEXEC') or die();
 
 class NewsModelItem extends JModelAdmin{
 
-	public function getForm($data=array(),loadData=true){
+    public function getForm($data=array(), loadData=true){
 		$form = $this->loadForm(
 			'com_news.item',
 			'item',
