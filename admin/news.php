@@ -3,6 +3,8 @@
 defined('_JEXEC') or die();
 
 $controller = JControllerLegacy::getInstance('News');//NewsController 
-$input = Jfactory::getApplication()->input;
+$input = JFactory::getApplication()->input;
 
-$controller ->execute();
+$controller ->execute($input->get('task','display'));
+
+$controller->redirect();
